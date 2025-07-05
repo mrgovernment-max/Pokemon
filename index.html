@@ -107,7 +107,7 @@
     .fade-in {
       opacity: 0;
       transform: translateY(60px);
-      animation: fadeIn 0.7s ease-out forwards;
+      animation: fadeIn 1s ease-out forwards;
     }
 
     @keyframes fadeIn {
@@ -227,6 +227,10 @@
         Imgcard.classList.remove("fade-in");
         void Imgcard.offsetWidth;
         Imgcard.classList.add("fade-in");
+          // Restart fade-in animation
+          cardDetails.classList.remove("fade-in");
+        void cardDetails.offsetWidth;
+        cardDetails.classList.add("fade-in");
       } catch (error) {
         const ErrorMsg = document.getElementById('errorMsg');
         ErrorMsg.style.display = 'block';
