@@ -12,9 +12,9 @@
     body {
       background: linear-gradient(120deg, #3c3637, #dbd7d6, #000000);
       font-family: 'Segoe UI', sans-serif;
-      display: flex;
       flex-direction: column;
       align-items: center;
+      height: auto;
       padding: 50px 20px;
       min-height: 100vh;
     }
@@ -75,6 +75,7 @@
       text-align: center;
       max-width: 320px;
       width: 100%;
+      height: auto;
       display: none; /* Hidden by default */
       backdrop-filter: blur(8px);
       border: 1px solid rgba(255, 255, 255, 0.3);
@@ -132,6 +133,19 @@
       max-width: 320px;
       text-align: center;
     }
+
+    /* Responsive Design */
+@media (max-width:750px) {
+  #Pokemon-display{
+      display: grid;
+      width: 96%;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 25px;
+      height: auto;
+      
+        
+    }
+}
     
 
 
