@@ -201,14 +201,14 @@
         document.getElementById('height').innerHTML = data.height;
         let abilitieshtml = ' '
         const abilities = data.abilities.forEach(element => {
-            abilitieshtml+=   `<li>${element.ability.name}</li>`
+            abilitieshtml+=   ` <br> ${element.ability.name}`
         });
     
         document.getElementById('abilities').innerHTML =abilitieshtml;
 
         let typeshtml = ''
         data.types.forEach(element => {
-            typeshtml += `<li> ${element.type.name} </li>`
+            typeshtml += `<br> ${element.type.name}`
         });
 
         document.getElementById('type').innerHTML = typeshtml;
